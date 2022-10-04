@@ -1,18 +1,48 @@
+body {
+  background-color: ;
+}
+
 div {
   max-width: 1600px;
   margin: 0 auto;
-  background-color: red;
+}
+
+header {
+  background-color: ;
 }
 
 nav a {}
 
-#hero-msg h1,
-#hero-msg h4 {}
+nav a hover {
+  background-color: ;
+}
+
+
 
 .botton-box {}
 
 main section {}
 
+#hero-msg h1,
+{}
+
+#hero-msg h4 {}
+
+.book,
+.join {
+  background-color: ;
+}
+
+.book:hover,
+.join:hover {
+  background-color: ;
+}
+
 #background {
   height: 725px;
+  background-color: ;
+}
+
+footer {
+  background-color: ;
 }
