@@ -1,5 +1,5 @@
 body {
-  background-color: ;
+  background-color: #9595aa;
 }
 
 div {
@@ -8,13 +8,13 @@ div {
 }
 
 header {
-  background-color: ;
+  background-color: #ffffff;
 }
 
 nav a {}
 
-nav a hover {
-  background-color: ;
+nav a:hover {
+  background-color: #a1eba1;
 }
 
 
@@ -30,19 +30,19 @@ main section {}
 
 .book,
 .join {
-  background-color: ;
+  background-color: #ffffff;
 }
 
 .book:hover,
 .join:hover {
-  background-color: ;
+  background-color: #f7b6f7;
 }
 
 #background {
   height: 725px;
-  background-color: ;
+  background-color: #cfa1f8;
 }
 
 footer {
-  background-color: ;
+  background-color: #a991f7;
 }
