@@ -1,0 +1,18 @@
+div {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: red;
+}
+
+nav a {}
+
+#hero-msg h1,
+#hero-msg h4 {}
+
+.botton-box {}
+
+main section {}
+
+#background {
+  height: 725px;
+}
