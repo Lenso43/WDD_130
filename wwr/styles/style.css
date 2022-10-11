@@ -22,13 +22,13 @@ header {
 nav a {
   color: #CA6702;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 nav a:hover {
   color: #EE9B00;
   background-color: #a1eba1;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .home-title {
