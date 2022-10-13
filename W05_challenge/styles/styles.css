@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  margin: 14.2% 9% 3%;
+  margin: 15.9% 9% 3%;
 }
 
 h1 {
@@ -34,12 +34,14 @@ h1 {
 #photo_holder {
   background-color: gray;
   max-height: 33%;
+  text-align: center;
 }
 
 figure {
-  display: inline-block;
+  display: inline-flex;
   text-align: center;
-  width: 28.3%;
+  width: 23.3%;
+  margin: 0 32px;
 }
 
 .we_three_pics {
