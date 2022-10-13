@@ -1,13 +1,21 @@
 html {
   width: 100%;
   height: auto;
-  background-image: url(../images/blossoms.jpg);
-  background-color: gray;
-  background-attachment: fixed;
+  background-color: rgb(255, 255, 255);
   background-size: 100% 100%;
   font-family: "Arial", "Open Sans", sans-serif;
   font-size: 1em;
   color: #03022f;
+}
+
+
+
+#container {
+  border: black solid 1px;
+  background-image: url(../images/blossoms.jpg);
+  width: 60%;
+  margin-top: 9%;
+  margin-left: 20%;
 }
 
 body {
@@ -40,13 +48,13 @@ h1 {
 figure {
   display: inline-flex;
   text-align: center;
-  width: 23.3%;
-  margin: 0 32px;
+  width: 32.9%;
+  margin: 0%;
 }
 
 .we_three_pics {
-  height: 20em;
-  margin: 3em;
+  height: 11em;
+  margin: 1em;
   border-radius: 50%;
   border: #444444 15px solid;
 }
