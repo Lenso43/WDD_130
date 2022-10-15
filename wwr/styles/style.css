@@ -7,7 +7,23 @@
 /* "Sedgwick Ave" */
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 
+
+
+/* Default styles for page */
+body {
+  background-color: #9595aa;
+  font-family: "Indie Flower", "Bradley Hand ITC", "Ink Free";
+  margin: 0;
+  padding: 0;
+}
+
 /* Testing delete thease selectors later */
+#fontSamples {
+  border: black solid 2px;
+  background-color: green;
+  margin-bottom: 15px;
+}
+
 #I-F {
   font-size: 2em;
   font-family: "Indie Flower";
@@ -23,13 +39,8 @@
   font-family: "Sedgwick Ave";
 }
 
-/* Default styles for page */
-body {
-  background-color: #9595aa;
-  font-family: "Indie Flower", "Bradley Hand ITC", "Ink Free";
-  margin: 0;
-  padding: 0;
-}
+/* @--}---- Testing delete the above selectors later ----{--@ */
+
 
 #content {
   max-width: 1600px;
