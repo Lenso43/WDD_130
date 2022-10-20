@@ -192,13 +192,10 @@
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  z-index: ;
+  z-index: 1;
   justify-self: left;
   /* float: left; */
 }
-
-.yellow5:contains(+ "Step 01:") {
-  color: red;
 }
 
 .yellow5 {
