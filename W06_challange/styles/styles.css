@@ -18,7 +18,6 @@ main {
 
 img {
   background-color: white;
-  border: red solid 1px;
   width: 100%;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -27,7 +26,6 @@ img {
 }
 
 #gridTitle {
-  border: red solid 1px;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -42,7 +40,6 @@ img {
 
 #gridSubTitle {
   color: #a40d10;
-  border: red solid 1px;
   margin: 0 5px;
   text-align: center;
   grid-column-start: 2;
