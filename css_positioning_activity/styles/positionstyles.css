@@ -194,8 +194,6 @@
   grid-row-end: 3;
   z-index: 1;
   justify-self: left;
-  /* float: left; */
-}
 }
 
 .yellow5 {
@@ -223,7 +221,6 @@
   height: 600px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  /* justify-items: center; */
   grid-gap: 0;
 }
 
