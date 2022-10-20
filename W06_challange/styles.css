@@ -1,0 +1,41 @@
+Body {
+  width: 100%;
+}
+
+main {
+  max-width: 60%;
+  margin: 20px auto;
+  border: solid 1px black;
+}
+
+#flexContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20;
+  /* background-color: gray; */
+}
+
+img {
+  background-color: white;
+  border: red solid 1px;
+  max-width: 33em;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.gridItem h1 {
+  border: red solid 1px;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  text-align: center;
+  align-self: center;
+  z-index: 1;
+}
+
+h2 {
+  color: #a40d10;
+  border: red solid 1px;
+  margin: 0 5px;
+  text-align: right;
+  grid-column: 2/3;
+}
