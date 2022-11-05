@@ -54,7 +54,7 @@ header {
 }
 
 .logo {
-  width: 80px;
+  width: 139px;
 }
 
 logo_link {
@@ -65,24 +65,26 @@ logo_link {
 
 .icon {
   width: 80px;
-  padding-top: 10px;
+  border-radius: 5px;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
+  background-color: #6f7364;
 }
 
 nav a {
-  color: #CA6702;
+  color: #4febef;
   text-align: center;
   text-decoration: none;
   padding: 35px;
+  font-size: 1.5em;
 }
 
 nav a:hover {
   color: #EE9B00;
-  background-color: #a1eba1;
+  background-color: #a1c0eb;
   text-decoration: underline;
 }
 
@@ -120,7 +122,7 @@ nav a:hover {
 
 #hero-msg h4 {
   color: #b3bbf8;
-  background-color: #005F73;
+  background-color: #005f73ab;
   text-align: center;
   border-radius: 5px;
 }
@@ -165,6 +167,7 @@ join:hover {
   border: 10px solid #d9c2a3;
   transition: transform .5s;
   box-shadow: 5px 5px 10px #6f7364;
+  margin-bottom: 10px;
 }
 
 .rivers-card {
