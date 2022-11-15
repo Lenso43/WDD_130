@@ -131,6 +131,17 @@ nav a:hover {
   text-align: center;
 }
 
+figure.about#alt_logo {
+  text-align: center;
+}
+
+article.body_text.about h4.about {
+  margin: auto;
+  max-width: 600px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
 /* #hero-img {
   width: 100%;
 } */
@@ -195,6 +206,11 @@ join:hover {
   grid-column: 2/7;
   grid-row: 5/8;
   box-shadow: 5px 5px 10px #6f7364;
+}
+
+h2.about {
+  text-align: center;
+  color: #005F73;
 }
 
 .msg {
@@ -313,6 +329,10 @@ footer a:hover {
 footer .social img {
   padding-top: 15px;
   max-width: 60px;
+}
+
+footer.about {
+  margin-top: 44px;
 }
 
 
