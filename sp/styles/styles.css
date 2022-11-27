@@ -1,0 +1,32 @@
+/* body {
+  background-image: url(images/backround-tile.png);
+}
+
+div#container {
+  background-image: url(images/container.jpg);
+  display: block;
+} */
+/* style makes the height of the html element 100% of the window height */
+html {
+  height: 100%;
+}
+
+/* Style for body specifies a background font family font size, font color, and border
+		for the entire page*/
+Body {
+  background-image: url(../images/backround-tile.png);
+  /* font-family: ; */
+  font-size: 1em;
+  color: white;
+  border: black solid 2px;
+}
+
+/* Style for the container centers the page and specifies the width and margins */
+div#container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  background-image: url(../images/container.jpg);
+  display: block;
+}
