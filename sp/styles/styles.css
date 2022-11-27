@@ -19,14 +19,43 @@ Body {
   font-size: 1em;
   color: white;
   border: black solid 2px;
+  max-width: 65%;
+  margin: 0 auto;
 }
 
 /* Style for the container centers the page and specifies the width and margins */
 div#container {
+  display: block;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: black;
   background-image: url(../images/container.jpg);
-  display: block;
+
+}
+
+img#logo_name {
+  width: 376px;
+  margin: 10px 15px;
+}
+
+div#banner img {
+  width: 100%;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+}
+
+nav.body-nav {
+  margin: 15px 0;
+}
+
+nav.body-nav a {
+  border: #00e5ff 1px solid;
+  padding: 10px 20px 10px 20px;
+  color: #00e5ff;
+  margin: 0 3px;
+}
+
+main {
+  background-color: #00000096;
 }
