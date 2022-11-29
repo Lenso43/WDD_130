@@ -8,7 +8,7 @@ div#container {
 } */
 /* style makes the height of the html element 100% of the window height */
 html {
-  height: 100%;
+  height: fit-content;
 }
 
 /* Style for body specifies a background font family font size, font color, and border
@@ -31,7 +31,6 @@ div#container {
   margin-right: auto;
   background-color: black;
   background-image: url(../images/container.jpg);
-
 }
 
 img#logo_name {
@@ -41,8 +40,10 @@ img#logo_name {
 
 div#banner img {
   width: 100%;
+  margin: 40px auto;
   border-top: 2px black solid;
   border-bottom: 2px black solid;
+
 }
 
 nav.body-nav {
@@ -58,4 +59,58 @@ nav.body-nav a {
 
 main {
   background-color: #00000096;
+  height: fit-content;
 }
+
+section#req-paragraph {
+  margin: 40px auto;
+  padding: 10px 0;
+  width: 80%;
+  border-bottom: solid 2px #05f9fa;
+}
+
+div#home-img-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+figure.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-self: center;
+  width: 1155px
+}
+
+img#atten-grabber {
+  justify-self: center;
+  grid-column: 1/3;
+  grid-row: 1;
+  width: 700px;
+  border-radius: 5px;
+}
+
+img#promo {
+  justify-self: right;
+  grid-area: 2/1;
+  width: 300px;
+  margin: 25px 10px;
+  border-radius: 5px;
+}
+
+
+aside#productList {
+  grid-area: 2/2;
+  margin: 35px 82px;
+  border: solid #05f9fa 1px;
+  border-style: dashed;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 30px;
+  text-align: left;
+  background-color: #5c077c;
+  border-radius: 5px;
+}
+
+footer {}
