@@ -21,6 +21,7 @@ Body {
   border: black solid 2px;
   max-width: 65%;
   margin: 0 auto;
+
 }
 
 /* Style for the container centers the page and specifies the width and margins */
@@ -31,6 +32,7 @@ div#container {
   margin-right: auto;
   background-color: black;
   background-image: url(../images/container.jpg);
+  background-position: static;
 }
 
 img#logo_name {
@@ -58,11 +60,11 @@ nav.body-nav a {
 }
 
 main {
-  background-color: #00000096;
   height: fit-content;
 }
 
 section#req-paragraph {
+  background-color: #00000096;
   margin: 40px auto;
   padding: 10px 0;
   width: 80%;
@@ -71,30 +73,22 @@ section#req-paragraph {
 
 div#home-img-group {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-figure.home {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-self: center;
-  width: 1155px
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 img#atten-grabber {
   justify-self: center;
   grid-column: 1/3;
   grid-row: 1;
-  width: 700px;
+  width: 70%;
   border-radius: 5px;
 }
 
 img#promo {
   justify-self: right;
   grid-area: 2/1;
-  width: 300px;
+  width: 65%;
   margin: 25px 10px;
   border-radius: 5px;
 }
