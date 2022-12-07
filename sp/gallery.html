@@ -23,17 +23,31 @@
         <a class="nav" href="site-plan.html">Site Plan</a>
       </nav>
 
-      <div id="about_img">
-        <img src="images/Violin_1.jpg" title='5 1/2" x 7 1/2" Watercolor on paper' alt="watercolor, brightly colored painting of a violin">
+      <div id="banner">
+        <img src="images/homebanner1.jpg" alt="home banner image">
       </div>
 
       <main>
         <section>
-          <h1>Template</h1>
+          <h1 class="page_title" >Gallery</h1>
         </section>
-        <p>The gallery is were I will display the majority of my images, I will create child pages  that you will be able to open by clicking on an image that reprisents each gallery</p>
-        <!-- <p></p> -->
-        <figure></figure>
+        <div id="gallery-box">
+          <figure id="art" class="galery-link" >
+            <a href="gallery-art.html">
+              <img class="#" src="images/art/thumbnails/art.png" alt="#" title="#">
+            </a>
+          </figure>
+          <figure id="photography" class="galery-link" >
+            <a href="gallery-photo.html">
+              <img  class="#" src="images/photography/thumbnails/photography.jpg" alt="#" title="#">
+            </a>
+          </figure>
+          <!-- <figure class="galery-link" >
+            <a href="gallery-1.html">
+              <img id="photography" class="#" src="images" alt="#" title="#">
+            </a>
+          </figure> -->   
+      </div>     
       </main>
       <footer>
         <nav>
@@ -41,5 +55,35 @@
         </nav>
       </footer>
     </div>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
   </body>
 </html>

@@ -63,6 +63,16 @@ main {
   height: fit-content;
 }
 
+h1 {
+  font-family: "Indie Flower";
+}
+
+h1.page_title {
+  margin-left: 40px;
+  margin-top: 60px;
+  color: #00e5ff;
+}
+
 section#req-paragraph {
   background-color: #00000096;
   margin: 40px auto;
@@ -93,7 +103,6 @@ img#promo {
   border-radius: 5px;
 }
 
-
 aside#productList {
   grid-area: 2/2;
   margin: 35px 82px;
@@ -108,3 +117,26 @@ aside#productList {
 }
 
 footer {}
+
+/* --------gallery page styles---------- */
+#gallery-box {
+  display: grid;
+  margin: 0 auto;
+  width: 600px;
+  grid-template-columns:  1fr 1fr;
+  height: 500px;
+}
+
+figure#art {
+  grid-column: 1;
+  justify-self: center;
+}
+
+figure#photography {
+  grid-column: 2;
+  justify-self: center;
+}
+
+figure.galery-link img {
+  width: 200px;
+}
