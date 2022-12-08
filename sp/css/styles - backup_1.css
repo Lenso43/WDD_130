@@ -1,0 +1,557 @@
+/*style sheet created by: Lenny Stossel, 5-17-2018 */
+
+/* style makes the height of the html element 100% of the window height */
+html {
+	height: 100%;
+}
+
+/* Style for body specifies a background font family font size, font color, and border
+		for the entire page*/
+Body{
+	background-image: url(../images/backroundimage1.png);
+	font-family: BankGothic Lt BT;
+	font-size: 1em;
+	color: white;
+	border: black solid 2px;
+}
+
+/* Style for the container centers the page and specifies the width and margins */
+div#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	background-image: url(../images/container.jpg);
+	display: block;
+}
+
+/* styles the header element */
+div#container>header {
+	display: block;
+	text-align: center;
+}
+
+/* Styles logo */
+header>img#logo_name {
+	margin-top: 0.4em;
+	width: 70%;
+	height: auto;
+}
+
+/* styles logo image */
+header>img#logo_img {
+	margin-top: -0.1em;
+	margin-left: 1em;
+	width: 117.5px;
+	height: auto;
+}
+
+/* Styles all ul elements */
+div#container ul {
+	list-style-type: none;
+	padding-inline-start: 0px;
+}
+
+div#container ul li {
+	margin: 11px 0;
+}
+
+/* styles nav */
+nav {
+	width: 96%;
+	text-align: center;
+	margin: auto;
+}
+
+/* styles nav ul */
+nav>ul {
+   display: block;
+   padding-inline-start: 0px;
+}
+
+/* Styles nav ul li */
+nav>ul>li {
+	border: solid 1.3px #dd79ff;
+	border-radius: 7px;
+	display: block;
+	margin: 0.2em;
+	padding: 0.3em;
+}
+
+/* styles anchor elements within the nav element */
+nav>ul>li>a {
+    text-decoration: none;
+    font-size: 3.5em;
+    padding: 0px 24px;
+    width: 30%;
+}
+
+/* Styles the Banner */
+div#container>div#banner {
+    display: block;
+}
+
+div#container>div#banner>img {
+	width: 100%;
+}
+
+/* Style to create a fluid image */
+div#banner>img[src="../images/homebanner_1.jpg"] {
+	display: none;
+	margin: 40px auto;
+	width: 100%;
+	height: auto;
+}
+
+/* Style to create a fluid image */
+div#banner>img[src="../images/homebanner_2.jpg"] {
+	display: block;
+	width: 500px;
+	height: auto;
+	margin: 0.6em auto;
+}
+
+
+/*********************
+ styles for the footer section
+**********************/
+
+/* styles the footer element */
+#container>footer {
+    margin-block-end: 0px;
+    color: white;
+    font-family: BankGothic Lt BT;
+    padding: 1em;
+}
+
+/* styles the paragraph elements inside the footer element */
+footer>p {
+	color: white;
+}
+
+/* styles the ancor elements inside the footer element */
+footer>a {
+	font-size: 1.2em;
+}
+
+/* styles the copytwrite in the footer element */
+footer>p#copywrite {
+}
+
+/* styles header paragraph for the social media links */
+footer>div#social>p {
+    color: burlywood;
+    font-size: 1.2em;
+}
+
+.tablet {
+	display: none;
+}
+
+.desktop {
+	display: none;
+}
+
+
+/*******************
+ Styles for main element 
+ *******************/
+ 
+main {
+	display: block;
+}
+
+main>h1 {
+	color: #b7b7b7;
+	margin-left: 1em;
+	font-size: 1.5em;
+}
+
+main>div.mainContentArea {
+	background-image: linear-gradient(90deg, #1b0025, #8d00bda1);
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+	overflow: auto;
+}
+
+main>div.mainContentArea>h1.headline {
+	font-size: 1.8em;
+	text-align: center;
+	margin: 0;
+	padding: 0;}
+
+.title {
+	font-family: GothicI;
+}
+
+main>div.mainContentArea>h2.description {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: auto;
+    padding: 0.3em;
+}
+
+main>div.mainContentArea>img{
+	text-align: center;
+	float: left;
+	margin-bottom: 1em;
+}
+
+div.mainContentArea>article>h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+#promotions {
+	text-align: center;
+}
+
+.productList {
+	display: inline-block;
+	margin: 1.5em;
+	text-align: center;
+	border: solid #05f9fa 1px;
+	border-style: dashed;
+	width: 17em;
+	height: auto;
+}
+
+main>div.mainContentArea>article>p.article {
+	font-size: 1.5em;
+  text-align: center;
+}
+
+main>div.mainContentArea>.pgLink {
+	font-size: 1.4em;
+}
+
+main>div.mainContentArea>#productList>h2 {
+	font-family: arial;
+	font-size: 1.9em;
+	font-weight: bold;
+	color: #43ff08;
+	margin-top: 0.5em;
+	margin-left: 0;
+	margin-bottom: 0;
+}
+
+main>div.mainContentArea>#productList>div>ul {
+	margin-top: 0;
+	list-style-type: square;
+}
+
+main>div.mainContentArea>#productList>div>ul>li {
+	color: greenyellow;
+	font-family: cursive;
+	font-size: 1.4em;
+}
+
+a {
+	color: #4beeff;
+}
+
+a:visited {
+	color: #cd3aff;
+}
+
+
+/***************
+ Gallery page styles 
+ ***************/
+main>div.mainContentArea>#gallery {
+ text-align: center;
+ padding: 1em;
+}
+
+main>div.mainContentArea>#galleryLinks {
+ text-align: center;
+ padding: 1em;
+}
+
+main>div.mainContentArea>div#galleryLinks img {
+	width: 100px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+
+main>div.mainContentArea>div#gallery img {
+	width: 100px;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-bottom: 8px;
+	border: 3px #9e9e9e solid;
+}
+
+footer {
+	background-color: black;
+}
+
+footer>nav>li {
+	display: inline-block;
+	margin: 2px 4px 2px 4px;
+}
+
+footer>.social>a>img {
+	width: 75px;
+}
+
+
+/****************************
+ Styles for media query above 600px
+ ****************************/
+@media all and (max-width: 580px) {
+	
+	body>div#container>div#banner>img[src="../images/homebanner_2.jpg"] {
+		display: none;
+	}
+	
+}
+
+
+
+/****************************
+ Styles for media query above 600px
+ ****************************/
+@media all and (min-width:600px)   {
+	
+	body>div#container>header>img#logo_name {
+    margin-top: 0.4em;
+    width: 60%;
+    height: auto;
+	}
+
+}
+
+/* Media query for tablet layout targets screen size with a minimum width of 740px. */ 
+
+
+@media all and (min-width:740px)   {
+
+	Body{
+	width: 700px;
+	margin: auto;
+	}
+
+
+
+	body>div#container>div#banner>img[src="../images/homebanner_1.jpg"] {
+		display: none;
+	}
+	
+	div.mainContentArea>aside {
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+		display: block;
+		width: 40%;
+		float: right;
+	}
+
+	header {
+			display: block;
+			text-align: left;
+	}
+			
+	header>img#logo_name {
+		margin: 6px 4px 1px;
+		width: 60%;
+		height: auto;
+	}
+	
+	#promotions {
+	text-align: left;
+	}
+	
+	.productList {
+		float: right;
+		margin: 0% 0;
+	}
+
+	.advertisement {
+		width: 92%;
+		height: auto;
+		border: #27ff00 solid 1.5px;
+		box-shadow: black 9px 9px 13px;
+		text-align: center;
+		border-radius: 7px 7px 7px;
+		float: left;
+		margin: 5px 25px 25px 5px;
+	}
+
+	figure.bilboard .advertisement {
+			clear: both;
+	}
+		
+	
+	article>h2.description {
+		 font-size: 1.6em;
+	}
+	
+	.tablet {
+		display: block;
+		overflow: auto;
+	}
+	
+	
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+/* Media query for desktop layout targets screens with a minimum width of 830px. */
+@media only screen and (min-width: 1100px) {
+
+	/* Style specifies to display the desktop class */
+
+html {
+	height: 100%;
+}
+
+/*Style for body specifies a background color*/
+Body{
+	width: 900px;
+}
+
+body>div#container>header>img#logo_name {
+	margin: 6px 4px 1px;
+	width: 45%;
+	height: auto;
+	float: left;
+}
+
+
+
+/* Style for the container centers the page and specifies the width and margins */
+body>div#container {
+}
+
+body>div#container>header>img#logo {
+}
+/* styles nav */
+body>div#container>nav {
+float: right;
+text-align: right;
+}
+
+/* styls nav ul */
+body>div#container>nav>ul {
+display: block;
+padding-inline-start: 0px;
+text-align: center;
+}
+
+body>div#container>nav>ul>li {
+border: solid 1.3px #dd79ff;
+/* list-style-type: none; */
+text-align: center;
+border-radius: 7px;
+display: inline-block;
+margin: 0.2em;
+padding: 0.3em;
+}
+
+body>div#container>nav>ul>li>a {
+	font-size: 1.6em;
+}
+
+/* Style to create a fluid image */
+body>div#container>div#banner>img[src="../images/homebanner_1.jpg"] {
+	display: block;
+}
+
+/* Style to create a fluid image */
+body>div#container>div#banner>img[src="../images/homebanner_2.jpg"] {
+	display: none;
+}
+
+
+/**************************
+**************************
+******** Main styles ********
+**************************/
+
+main>h1 {
+	margin-left: 2em;
+	font-size: 1.6em;
+}
+
+main>div.mainContentArea {
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+main>div.mainContentArea>h1.headline {
+	font-size: 2em;
+}
+
+.title {
+	font-family: GothicI; /* font color #9A0000 is my main  
+																		 color choice for the title*/
+}
+
+main>div.mainContentArea>img{
+	text-align: center;
+	float: left;
+}
+
+main>div.mainContentArea>aside#ad_1 {
+	float: left;
+	margin-left: 15%;
+}
+
+main>div.mainContentArea>aside#ad_2 {
+	float: right;
+	margin-right: 15%;
+}
+
+main>div.mainContentArea>aside>h2 {
+	font-family: arial;
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #43ff08;
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+	margin-bottom: 0;
+}
+
+
+/**************************
+ **************************
+ **************************
+ Gallery page styles **********
+ ************************ */
+main>div.mainContentArea>#gallery {
+ text-align: center;
+ padding: 1em;
+}
+
+main>div.mainContentArea>div#gallery img {
+	width: 150px;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-bottom: 8px;
+	border: 3px #9e9e9e solid;
+}
+
+main>div.mainContentArea>div#galleryLinks img {
+	width: 150px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+}
+
+
+
