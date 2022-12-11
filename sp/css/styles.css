@@ -264,6 +264,10 @@ main>div.mainContentArea>#productList>div>ul>li {
 /***************
  Gallery page styles 
  ***************/
+#gallery {
+	display: grid repete(4, 1fr);
+}
+
 main>div.mainContentArea>#gallery {
 	text-align: center;
 	padding: 1em;
