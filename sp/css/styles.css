@@ -24,11 +24,13 @@ div#container {
 	margin-right: auto;
 	background-color: black;
 	background-image: url(../images/container.jpg);
-	display: block;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
 }
 
 /* styles the header element */
-div#container>header {
+header {
 	display: block;
 	text-align: center;
 }
@@ -48,14 +50,39 @@ header>img#logo_img {
 	height: auto;
 }
 
-/* Styles all ul elements */
-div#container ul {
-	list-style-type: none;
-	padding-inline-start: 0px;
+/* styles nav */
+nav {
+	width: 96%;
+	text-align: center;
+	margin: auto;
 }
 
-div#container ul li {
-	margin: 11px 0;
+.productList>ul {
+	list-style-type: none;
+	margin: 0 35px 15px 0;
+}
+
+/* Styles all ul elements */
+nav>ul {
+	list-style-type: none;
+	padding-inline-start: 0px;
+	display: block;
+}
+
+nav>ul>li {
+	text-align: center;
+	border-radius: 7px;
+	display: inline-block;
+	margin: 0.2em;
+	border: solid 1.3px #dd79ff;
+	padding: 0.3em;
+}
+
+/* styles anchor elements within the nav element */
+nav>ul>li>a {
+	font-size: 1.6em;
+	padding: 0px 24px;
+	width: 30%;
 }
 
 a {
@@ -67,58 +94,16 @@ a:visited {
 	color: #cd3aff;
 }
 
-/* styles nav */
-nav {
-	width: 96%;
-	text-align: center;
-	margin: auto;
-}
-
-/* styles nav ul */
-nav>ul {
-	display: block;
-}
-
-/* styles anchor elements within the nav element */
-nav>ul>li>a {
-	font-size: 1.6em;
-	padding: 0px 24px;
-	width: 30%;
-}
-
-body>div#container>nav>ul>li {
-	text-align: center;
-	border-radius: 7px;
-	display: inline-block;
-	margin: 0.2em;
-	border: solid 1.3px #dd79ff;
-	padding: 0.3em;
-}
-
 /* Styles the Banner */
-div#container>div#banner {
+div#banner {
 	display: block;
 }
 
-div#container>div#banner>img {
+div#banner>img {
 	width: 100%;
 }
 
-/* Style to create a fluid image */
-div#banner>img[src="../images/homebanner_1.jpg"] {
-	display: none;
-	margin: 40px auto;
-	width: 100%;
-	height: auto;
-}
 
-/* Style to create a fluid image */
-div#banner>img[src="../images/homebanner_2.jpg"] {
-	display: block;
-	width: 500px;
-	height: auto;
-	margin: 0.6em auto;
-}
 
 
 /*********************
@@ -126,16 +111,29 @@ div#banner>img[src="../images/homebanner_2.jpg"] {
 **********************/
 
 /* styles the footer element */
-#container>footer {
+footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	margin-block-end: 0px;
 	color: white;
 	font-family: BankGothic Lt BT;
 	padding: 1em;
 }
 
+.social {
+	justify-self: center;
+	margin-right: 35px;
+}
+
 /* styles the paragraph elements inside the footer element */
 footer>p {
 	color: white;
+	text-align: center;
+	align-self: center;
+}
+
+nav>#footer-nav {
+	align-self: left;
 }
 
 /* styles the ancor elements inside the footer element */
@@ -144,7 +142,10 @@ footer>a {
 }
 
 /* styles the copytwrite in the footer element */
-footer>p#copywrite {}
+footer>p#copywrite {
+	grid-column: 1/4;
+	justify-self: center;
+}
 
 /* styles header paragraph for the social media links */
 footer>div#social>p {
@@ -264,18 +265,23 @@ main>div.mainContentArea>#productList>div>ul>li {
 /***************
  Gallery page styles 
  ***************/
-#gallery {
-	display: grid repete(4, 1fr);
-}
+#gallery {}
 
 main>div.mainContentArea>#gallery {
-	text-align: center;
 	padding: 1em;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: auto;
+	width: fit-content;
+	margin: 25px auto;
 }
 
 main>div.mainContentArea>#galleryLinks {
 	text-align: center;
-	padding: 1em;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin: 25px auto;
+	width: fit-content;
 }
 
 main>div.mainContentArea>div#galleryLinks img {
