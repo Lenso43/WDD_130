@@ -5,15 +5,17 @@
 		<title>S. P. Contact Us</title> 
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/styles.css">
-		<link rel="shortcut icon" href="images/CameraLogo.ico" type="image/x-icon"/> 
+		<link rel="shortcut icon" href="images/CameraLogo.ico" type="image/x-icon"> 
 	</head>
 
 	<body>		
 		<div id="container">
 			<!--Use the header area for the website name or logo-->
 			<header>
-			  <img id="logo_name" src="images/logo.png" alt="Stossel Photography Logo"></a>
-			</header>  
+				<a href="index.html">
+			   <img id="logo_name" src="images/logo.png" alt="Stossel Photography Logo">
+				</a>
+			</header>
 			
 				
 			<!--Use the nav area to add hyperlinks to other pages within the website-->
@@ -23,7 +25,7 @@
 					<li><a class="nav" href="about.html">about</a>
 					<li><a class="nav" href="gallery.html">gallery</a>
 					<li><a class="nav" href="contact.html">contact</a>
-					<li><a class="nav" href="site-plan.html">site plan</a>
+					<li><a class="nav" href="site-plan.html">site-plan</a>
 				</ul>
 			</nav>   
 			
@@ -34,26 +36,27 @@
 			<main id="wrapper">
 				<h1>Contact Us</h1>
 				<div class="mainContentArea">
-					<h1 class="headline"></h1>
-					<h2 class="description"></h2>
-					<img id="" src="" alt="" title=""> 
-					<form>
+					<form action="/action_page.php" id="frm_contact">
 						<label for="fname">First name:</label><br>
-						<input type="text" id="fname" name="fname"><br>
+						<input type="text" id="fname" name="fname" onfocus="this.value=''" value="John"><br>
 						<label for="lname">Last name:</label><br>
-						<input type="text" id="lname" name="lname"><br>
-						<label for="email">Email Address:</label><br>
-						<input type="text" id="email" name="email"></label><br>
+						<input type="text" id="lname" name="lname" onfocus="this.value=''" value="Doe"><br><br>
+						<label for="email">Email Adress:</label><br>
+						<input type="text" id="email" name="email" onfocus="this.value=''" value="Your-email@mail.com"><br><br>
+						<input type="submit" value="Submit">
 					</form>
 				</div>
 			</main>
 		</div>	
 		<footer>
 			<nav id="footer-nav">
-				<li><a class="nav" href="index.html">home</a>
-				<li><a class="nav" href="about.html">about</a>
-				<li><a class="nav" href="gallery.html">gallery</a>
-				<li><a class="nav" href="contact.html">contact</a>
+				<ul>
+					<li><a class="nav" href="index.html">home</a>
+						<li><a class="nav" href="about.html">about</a>
+						<li><a class="nav" href="gallery.html">gallery</a>
+						<li><a class="nav" href="contact.html">contact</a>
+						<li><a class="nav" href="site-plan.html">site-plan</a>
+				</ul>
 			</nav> 
 
 			<p>
@@ -62,7 +65,6 @@
 			</p>
 
 			<div class="social">
-				<p>Connect with us:</p>
 				<a href="https://www.facebook.com/lenny.stossel" target="_blank"> <img src="images/Facebook-logo-watercolor-social-media-icon-png.png" alt="Facebook logo"></a>
 				<a href="https://www.instagram.com/real.estate.imaging/" target="_blank"><img src="images/InstagramPNG3.png" alt="instagram logo"></a>
 			</div>

@@ -9,7 +9,7 @@ html {
 		for the entire page*/
 Body {
 	background-image: url(../images/backroundimage1.png);
-	font-family: BankGothic Lt BT;
+	font-family: "BankGothic Lt BT";
 	width: 900px;
 	font-size: 1em;
 	color: white;
@@ -32,14 +32,14 @@ div#container {
 /* styles the header element */
 header {
 	display: block;
-	text-align: center;
 }
 
 /* Styles logo */
-header>img#logo_name {
-	margin-top: 0.4em;
-	width: 70%;
+header>a>img#logo_name {
+	margin: 10px 15px;
+	width: 35%;
 	height: auto;
+	justify-self: left;
 }
 
 /* styles logo image */
@@ -116,7 +116,7 @@ footer {
 	grid-template-columns: repeat(3, 1fr);
 	margin-block-end: 0px;
 	color: white;
-	font-family: BankGothic Lt BT;
+	font-family: "BankGothic Lt BT"; 
 	padding: 1em;
 }
 
@@ -128,12 +128,22 @@ footer {
 /* styles the paragraph elements inside the footer element */
 footer>p {
 	color: white;
-	text-align: center;
+	text-align: center; 
 	align-self: center;
 }
 
-nav>#footer-nav {
-	align-self: left;
+#footer-nav {
+	justify-self: left;
+}
+
+#footer-nav>ul>li {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+#footer-nav>ul>li>a {
+	font-size: 1em;
+	padding: 6px;
 }
 
 /* styles the ancor elements inside the footer element */
@@ -153,12 +163,25 @@ footer>div#social>p {
 	font-size: 1.2em;
 }
 
-.tablet {
-	display: none;
+
+
+
+
+footer {
+	background-color: black;
 }
 
-.desktop {
-	display: none;
+footer>nav>li {
+	display: inline-block;
+	margin: 2px 4px 2px 4px;
+}
+
+footer>.social>a>img {
+	width: 75px;
+}
+
+#w3css {
+	grid-column: 2/3;
 }
 
 
@@ -200,8 +223,7 @@ main>div.mainContentArea>h1.headline {
 main>div.mainContentArea>h2.description {
 	font-size: 1.3em;
 	text-align: center;
-	margin: 0;
-	margin-bottom: auto;
+	margin: 10px 0px -1px 0;
 	padding: 0.3em;
 }
 
@@ -265,12 +287,11 @@ main>div.mainContentArea>#productList>div>ul>li {
 /***************
  Gallery page styles 
  ***************/
-#gallery {}
 
 main>div.mainContentArea>#gallery {
 	padding: 1em;
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: auto;
 	width: fit-content;
 	margin: 25px auto;
@@ -299,18 +320,7 @@ main>div.mainContentArea>div#gallery img {
 	border: 3px #9e9e9e solid;
 }
 
-footer {
-	background-color: black;
-}
 
-footer>nav>li {
-	display: inline-block;
-	margin: 2px 4px 2px 4px;
-}
-
-footer>.social>a>img {
-	width: 75px;
-}
 
 
 /****************************
@@ -337,7 +347,12 @@ figure.bilboard .advertisement {
 	clear: both;
 }
 
-.tablet {
+.funny {
 	display: block;
-	overflow: auto;
+  overflow: auto;
+}
+
+/* Stlying for form */
+form {
+	margin: 0 0 20px 0;
 }
